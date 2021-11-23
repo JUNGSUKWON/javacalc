@@ -26,7 +26,7 @@ public class Test {
 	
 	
 	//오징어게임
-	int money = 0;
+	private int money = 0;
 	//경마장에서 돈따는 과정
 	public void setA(int money) {
 		System.out.println(money+"만원을 걸어야겠군");
@@ -38,8 +38,6 @@ public class Test {
 		return this.money;
 	}
 	
-	
-	
 	public void gongYou(int a) {
 		
 		System.out.println("[공유]선생님 저랑 딱지치기 한번 하시겠습니까? ");
@@ -47,7 +45,6 @@ public class Test {
 		while(a>0) {
 			System.out.println("짝!!");
 			a-=10;
-			
 		}
 		System.out.println("오징어게임에 참가하시겠습니까?");
 	}
