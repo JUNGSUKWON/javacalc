@@ -9,8 +9,6 @@ public class Calc2 {
 	private int num2;
 	private String op; //연산자 변수
 	
-	
-	
 	//두개의 수를 입력
 	public void inputNumber() {
 		Scanner sc = new Scanner(System.in);
