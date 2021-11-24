@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Test {
 	
-	public void method() {
+	public static void method() {
 		System.out.println("나는 method()");
 	}
 	
@@ -14,7 +14,7 @@ public class Test {
 //	}
 	
 	//메소드 오버로딩(이름은 같지만 매개변수로 구분이 가능한것이 오버로딩)
-	public void method(int number) {
+	public static void method(int number) {
 		System.out.println("나는 숫자를 받을 수 있는 method()");
 	}
 	public void method(int number1,int number2) {
@@ -26,7 +26,7 @@ public class Test {
 	
 	
 	//오징어게임
-	private int money = 0;
+	private static int money = 0;
 	//경마장에서 돈따는 과정
 	public void setA(int money) {
 		System.out.println(money+"만원을 걸어야겠군");
@@ -38,8 +38,7 @@ public class Test {
 		return this.money;
 	}
 	
-	public void gongYou(int a) {
-		
+	public static void gongYou(int a) {
 		System.out.println("[공유]선생님 저랑 딱지치기 한번 하시겠습니까? ");
 		
 		while(a>0) {

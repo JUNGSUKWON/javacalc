@@ -9,8 +9,10 @@ package calc;
 public class Calc {
 
 	
-	//더하기 메소드
-	public int plus(int num1, int num2) {
+	
+	
+	//인스턴스를 안만들고 바로 호출 가능
+	public static int plus(int num1, int num2) {
 		return num1+num2;
 	}
 	

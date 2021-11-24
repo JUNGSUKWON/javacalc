@@ -1,19 +1,24 @@
 package calc;
 
+import com.jsw.util.Util;
+
 public class MainClass {
 	
 	public static void main(String[] args) {
 			
-		Test test = new Test();
-		System.out.println("오늘 우리딸 생일인데 경마장에서 돈 많이 따야지~~ㅎㅎ");
-		test.setA(30);
-		int sung = test.getA();
+		System.out.println("계산기 프로그램");
+		//계산기 클래스를 선언(객체생성,인스턴스 생성)
+		Calc2 cc2 = new Calc2();
+		//두개의 숫자를 입력하시오
+		System.out.println("두개의 숫자를 입력하시오");
+		cc2.inputNumber();
+		//연산자를 입력하시오
+		System.out.print("연산자를 입력하시오:");
+		cc2.inputOper();
 		
-		System.out.println("와 오늘 "+ sung+" 만원이나 땄네 딸이 좋아하겠군 ㅎㅎ");
-//		System.out.println(sung+" 만원");
+		cc2.printResult();
 		
-		test.gongYou(sung);
-	
+		
 		
 	}
 }
